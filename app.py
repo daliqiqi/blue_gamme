@@ -15,7 +15,7 @@ from util import base64_to_pil
 
 # Declare a flask app
 app = Flask(__name__)
-app.debug = True
+# app.debug = True
 
 
 

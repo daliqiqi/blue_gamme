@@ -1,5 +1,6 @@
 Flask
 gevent
+pandas>=1.2.3
 h5py==3.1.0
 numpy==1.19.5
 Pillow==8.3.2
