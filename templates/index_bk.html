@@ -1,0 +1,47 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="main">
+  <div class="title">
+    <h3>bule_gama 0.1</h3>
+    <!-- <p>
+      <small>bule_gama 0.1</small>
+    </p> -->
+  </div>
+  <form class="form-horizontal" method="post">
+    <div class="row">
+      <text>任务类型</text>
+      <div class="col-sm-2 col-sm-offset-2">
+        <input name="task_type" value="QA" type="radio" checked="checked"> 问答
+      </div>
+      <div class="col-sm-2 ">
+       
+        <input name="task_type" value="SUMMARY" type="radio"> 总结
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label for="prompt" class="col-sm-2 control-label">输入</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="prompt" name="prompt" placeholder="什么是伽马射线" autofocus="">
+      </div>
+    </div>
+
+   
+  </form>
+
+  <div style="margin-top: 2rem;">
+    <input type="button" value="Submit" class="button" onclick="submitImage();" />
+    <input type="button" value="Clear" class="button" onclick="clearImage();" />
+  </div>
+
+  <div id="image-box">
+    <img id="image-display" />
+    <div id="pred-result" class="hidden"></div>
+    <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+  
+</div>
+
+{% endblock %}
