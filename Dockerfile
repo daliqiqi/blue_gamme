@@ -1,4 +1,4 @@
-FROM centos:7
+FROM tensorflow/tensorflow:2.5.1
 
 
 COPY requirements.txt /
