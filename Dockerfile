@@ -1,5 +1,4 @@
 FROM centos:7
-version="1.0.0"
 
 ENV LC_ALL "zh_CN.UTF-8"
 
